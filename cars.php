@@ -20,11 +20,12 @@
 			die("Connection failed".$conn->connect_error);
 		}
 		$sql = "SHOW TABLES FROM `admin`";
+		// Just testing
 $result = mysqli_query($conn,$sql);
 $print = mysqli_num_rows($result);
 $row1 = mysqli_fetch_array($result);
 if($result) {
-    echo "3. {$print} tables found in admin";
+   
     echo $row1[0];
 }
 		$query = mysqli_query($conn,'SELECT * FROM masini');
